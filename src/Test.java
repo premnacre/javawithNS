@@ -40,10 +40,10 @@ public class Test {
 		URL url = new URL("https://webservices.na1.netsuite.com/services/NetSuitePort_2014_2");
 		NetSuitePortType port = service.getNetSuitePort(url);
 		Passport passport =new Passport();
-		passport.setEmail( "praveen.mangilal@popcornapps.com" );
+		passport.setEmail( "test@gmail.com" );
 		passport.setPassword( "Test@123" );
 		
-		passport.setAccount( "TSTDRV1156901" );
+		passport.setAccount( "TSght" );
 		StatusDetail[] status = port.login( passport ).getStatus();
 		Customer cust = new Customer();
 		cust.setEntityId( "XYZ 2Inc");
